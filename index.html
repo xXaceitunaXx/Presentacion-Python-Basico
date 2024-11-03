@@ -5,6 +5,8 @@
     <title>Reveal.js Presentation</title>
     <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
     <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <script src="plugin/highlight/highlight.js"></script>
 </head>
 <div class="reveal">
     <div class="slides">
@@ -88,6 +90,23 @@
             <img src="assets/InstalacionCorrecta.png" alt="Instalación correcta">
             <p>Para salir: <code>exit()</code></p>
         </section>
+        <section>
+            <section data-auto-animate>
+                <h3>¿Cómo en Python?</h3>
+            </section>
+            <section data-auto-animate>
+                <h4>Variables</h4>
+            </section>
+            <section data-auto-animate>
+                <h4>Variables</h4>
+                <pre><code data-trim data-line-numbers>
+a = 1            # Variable llamada a con valor 1
+mensaje = "Hola" # Variable llamada mensaje con valor "Hola"
+123 = None       # Nombre de variable invalido [error]
+while = "404"    # Nombre reservado [error]
+                </code></pre>
+            </section>
+        </section>
 
     </div>
 </div>
@@ -97,7 +116,8 @@
 <script src="node_modules/reveal.js/dist/reveal.js"></script>
 <script>
     Reveal.initialize({
-        controls: false
+        controls: false,
+        plugins: [RevealHighlight],
     });
 </script>
 </body>
